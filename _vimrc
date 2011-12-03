@@ -11,6 +11,17 @@ else
   call vundle#rc()
 endif
 
+"Plugins  
+Bundle 'Shougo/neocomplcache'
+Bundle 'quickrun.vim'
+Bundle 'html5.vim'
+Bundle 'rails.vim'
+Bundle 'project.tar.gz'
+
+filetype plugin indent on
+
+cd $HOME
+
 "set number
 "バックアップファイルを作るディレクトリ
 set backupdir=$HOME/vimbackup
@@ -46,13 +57,13 @@ autocmd InsertEnter * highlight StatusLine guifg=#ccdc90 guibg=#2E4340
 autocmd InsertLeave * highlight StatusLine guifg=#2E4340 guibg=#ccdc90
 augroup END
 
-Bundle 'Shougo/neocomplcache'
-Bundle 'quickrun.vim'
-Bundle 'html5.vim'
+" キーマップ
+nmap <Space>b :ls<CR> :buffer
+nmap <Space>f :edit .<CR>
+nmap <Space>v :vsplit<CR><C-w><C-w>:ls<CR>:buffer
+nmap <Space>V :Vexplore!<CR><CR>
 
-filetype plugin indent on
-
-" Disable AutoComplPop.
+" neocomplcache用の設定
 	let g:acp_enableAtStartup = 0
 	" Use neocomplcache.
 	let g:neocomplcache_enable_at_startup = 1

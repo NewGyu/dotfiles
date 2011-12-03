@@ -1,3 +1,6 @@
+set columns=96
+set lines=32
+
 if has("win32") || has("win64")
   set guifont=consolas:h10:cSHIFTJIS
   set guifontwide=MS_Gothic:h10
