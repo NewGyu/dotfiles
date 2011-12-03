@@ -1,0 +1,5 @@
+if has("win32") || has("win64")
+  set guifont=consolas:h10:cSHIFTJIS
+  set guifontwide=MS_Gothic:h10
+endif
+
