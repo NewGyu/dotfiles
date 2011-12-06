@@ -1,7 +1,7 @@
-"ViŒİŠ·‚ğƒIƒt
+"Viäº’æ›ã‚’ã‚ªãƒ•
 set nocompatible
 
-"vundle—p
+"vundleç”¨
 filetype off
 if has("win32") || has("win64")
   set rtp+=~/vimfiles/vundle.git/ 
@@ -23,47 +23,47 @@ filetype plugin indent on
 cd $HOME
 
 "set number
-"ƒoƒbƒNƒAƒbƒvƒtƒ@ƒCƒ‹‚ğì‚éƒfƒBƒŒƒNƒgƒŠ
+"ãƒãƒƒã‚¯ã‚¢ãƒƒãƒ—ãƒ•ã‚¡ã‚¤ãƒ«ã‚’ä½œã‚‹ãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒª
 set backupdir=$HOME/vimbackup
 set directory=$HOME/vimbackup
-"ƒtƒ@ƒCƒ‹•Û‘¶ƒ_ƒCƒAƒƒO‚Ì‰ŠúƒfƒBƒŒƒNƒgƒŠ‚ğƒoƒbƒtƒ@ƒtƒ@ƒCƒ‹ˆÊ’u‚Éİ’è
+"ãƒ•ã‚¡ã‚¤ãƒ«ä¿å­˜ãƒ€ã‚¤ã‚¢ãƒ­ã‚°ã®åˆæœŸãƒ‡ã‚£ãƒ¬ã‚¯ãƒˆãƒªã‚’ãƒãƒƒãƒ•ã‚¡ãƒ•ã‚¡ã‚¤ãƒ«ä½ç½®ã«è¨­å®š
 set browsedir=buffer 
-"ƒNƒŠƒbƒvƒ{[ƒh‚ğWindows‚Æ˜AŒg
+"ã‚¯ãƒªãƒƒãƒ—ãƒœãƒ¼ãƒ‰ã‚’Windowsã¨é€£æº
 set clipboard=unnamed
-"ƒ^ƒu,ƒCƒ“ƒfƒ“ƒgŠÖŒW
+"ã‚¿ãƒ–,ã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆé–¢ä¿‚
 set autoindent
 set expandtab
 set ts=4 sw=2 sts=2
 set smarttab
 set smartindent
 
-"•Â‚¶Š‡ŒÊ‚ª“ü—Í‚³‚ê‚½‚Æ‚«A‘Î‰‚·‚éŠ‡ŒÊ‚ğ•\¦‚·‚é
+"é–‰ã˜æ‹¬å¼§ãŒå…¥åŠ›ã•ã‚ŒãŸã¨ãã€å¯¾å¿œã™ã‚‹æ‹¬å¼§ã‚’è¡¨ç¤ºã™ã‚‹
 set showmatch
-"•ÏX’†‚Ìƒtƒ@ƒCƒ‹‚Å‚àA•Û‘¶‚µ‚È‚¢‚Å‘¼‚Ìƒtƒ@ƒCƒ‹‚ğ•\¦
+"å¤‰æ›´ä¸­ã®ãƒ•ã‚¡ã‚¤ãƒ«ã§ã‚‚ã€ä¿å­˜ã—ãªã„ã§ä»–ã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’è¡¨ç¤º
 set hidden
-"ƒCƒ“ƒNƒŠƒƒ“ƒ^ƒ‹ƒT[ƒ`‚ğs‚¤
+"ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ã‚¿ãƒ«ã‚µãƒ¼ãƒã‚’è¡Œã†
 set incsearch
-"ƒ^ƒu•¶šAs––‚È‚Ç•s‰Â‹•¶š‚ğ•\¦‚·‚é
+"ã‚¿ãƒ–æ–‡å­—ã€è¡Œæœ«ãªã©ä¸å¯è¦–æ–‡å­—ã‚’è¡¨ç¤ºã™ã‚‹
 set list
 set listchars=tab:>\ ,extends:<
 
-"ƒJ[ƒ\ƒ‹‚ğs“ªAs––‚Å~‚Ü‚ç‚È‚¢‚æ‚¤‚É‚·‚é
+"ã‚«ãƒ¼ã‚½ãƒ«ã‚’è¡Œé ­ã€è¡Œæœ«ã§æ­¢ã¾ã‚‰ãªã„ã‚ˆã†ã«ã™ã‚‹
 set whichwrap=b,s,h,l,<,>,[,]
 
-"“ü—Íƒ‚[ƒhAƒXƒe[ƒ^ƒXƒ‰ƒCƒ“‚ÌƒJƒ‰[‚ğ•ÏX
+"å…¥åŠ›ãƒ¢ãƒ¼ãƒ‰æ™‚ã€ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒ©ã‚¤ãƒ³ã®ã‚«ãƒ©ãƒ¼ã‚’å¤‰æ›´
 augroup InsertHook
 autocmd!
 autocmd InsertEnter * highlight StatusLine guifg=#ccdc90 guibg=#2E4340
 autocmd InsertLeave * highlight StatusLine guifg=#2E4340 guibg=#ccdc90
 augroup END
 
-" ƒL[ƒ}ƒbƒv
+" ã‚­ãƒ¼ãƒãƒƒãƒ—
 nmap <Space>b :ls<CR> :buffer
 nmap <Space>f :edit .<CR>
 nmap <Space>v :vsplit<CR><C-w><C-w>:ls<CR>:buffer
 nmap <Space>V :Vexplore!<CR><CR>
 
-" neocomplcache—p‚Ìİ’è
+" neocomplcacheç”¨ã®è¨­å®š
 	let g:acp_enableAtStartup = 0
 	" Use neocomplcache.
 	let g:neocomplcache_enable_at_startup = 1
