@@ -57,6 +57,9 @@ autocmd InsertEnter * highlight StatusLine guifg=#ccdc90 guibg=#2E4340
 autocmd InsertLeave * highlight StatusLine guifg=#2E4340 guibg=#ccdc90
 augroup END
 
+set laststatus=2
+set statusline=%<%f\ %m\ %r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=\ (%v,%l)/%L%8P\
+
 " キーマップ
 nmap <Space>b :ls<CR> :buffer
 nmap <Space>f :edit .<CR>
