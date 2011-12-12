@@ -1,5 +1,7 @@
 "Vi互換をオフ
 set nocompatible
+"シンタックスハイライト
+syntax on
 
 "vundle用
 filetype off
@@ -57,6 +59,7 @@ autocmd InsertEnter * highlight StatusLine guifg=#ccdc90 guibg=#2E4340
 autocmd InsertLeave * highlight StatusLine guifg=#2E4340 guibg=#ccdc90
 augroup END
 
+"ステータスバーに文字コードと改行コードを表示する
 set laststatus=2
 set statusline=%<%f\ %m\ %r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=\ (%v,%l)/%L%8P\
 
