@@ -21,8 +21,9 @@ endif
 Bundle 'Shougo/neocomplcache'
 Bundle 'quickrun.vim'
 Bundle 'html5.vim'
-Bundle 'rails.vim'
 Bundle 'project.tar.gz'
+Bundle 'unite.vim'
+Bundle 'tpope/vim-rails'
 
 filetype plugin indent on
 
